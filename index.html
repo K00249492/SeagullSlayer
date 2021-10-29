@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Personal Project</title>
+    <title>Unity WebGL Player | Personal Project | Seagull Slayer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -11,15 +11,46 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Lab 5.json", {onProgress: UnityProgress});
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <style>
+      body {
+        font-family: 'Oswald', sans-serif;
+      }
+      h1 {
+        font-style: bold;
+        text-align: center;
+        font-size: 46pt;
+      }
+      .description {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Personal Project</div>
+    <header>
+      <h1>Seagull Slayer</h1>
+    </header>
+    <main>
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <!-- <div class="webgl-logo"></div> -->
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <!-- <div class="title">Seagull Slayer</div> -->
+          <div class="description">
+            <br>
+            <h2>Description</h2>
+            <p>Seagull Slayer is a simple arcade-style game, created in Unity. Play as a robotic crow on a mission to take down some <em>very</em> mean-looking seagulls and pelicans.</p>
+            <h2>Gameplay</h2>
+            <p>The arrow keys are used to move and the space bar is used to fire.</p>
+            <p>Watch out - the more seagulls and pelicans you defeat, the faster more will come!</p>
+            <p>Use the powerups you find to aid you in your battle and maximise your final score.</p>
+            <p>Good Luck!<p>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
